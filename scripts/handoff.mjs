@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: Apache-2.0
-import {readFile,writeFile,copyFile,mkdir} from 'node:fs/promises';
+import {readFile,writeFile,copyFile,mkdir,cp} from 'node:fs/promises';
 import {resolve} from 'node:path';
 import {ratingLabels,languageLabel,filterSources} from './handoff-page.mjs';
 const root=resolve(import.meta.dirname,'..');
@@ -11,6 +11,7 @@ const sources=filterSources(catalog.sources);
 if(sources.length!==expectedIDs.length||sources.some(source=>!expectedIDs.includes(source.id)))throw new Error('Unexpected catalog membership');
 const esc=value=>String(value).replace(/[&<>"']/g,char=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
 await mkdir(resolve(root,'site'),{recursive:true});
+await cp(resolve(root,'dist/community/v1/stable'),resolve(root,'site'),{recursive:true});
 await copyFile(resolve(root,'scripts/handoff-page.mjs'),resolve(root,'site/handoff-page.mjs'));
 await writeFile(resolve(root,'site/handoff-config.json'),JSON.stringify({expectedIDs:expectedIDs,repositoryURL:pack.repositoryURL,sources:sources.map(({id,name,languages,contentRating,availability})=>({id,name,languages,contentRating,availability}))})+'\n');
 await writeFile(resolve(root,'site/boot.mjs'),`import {mount} from './handoff-page.mjs';
@@ -29,7 +30,7 @@ const languages=[...new Set(sources.flatMap(source=>source.languages))].sort((a,
 const rows=sources.map(source=>{
  if(!/^icons\/[A-Za-z0-9_.-]+$/.test(source.icon))throw new Error('Invalid local icon');
  const install=`manko://repository/install?${new URLSearchParams({url,source:source.id})}`;
- return `<li id="source-${esc(source.id)}" class="source"><img src="./dist/community/v1/stable/${esc(source.icon)}" width="44" height="44" alt=""><div class="info"><h2>${esc(source.name)}</h2><div class="meta"><span>v${esc(source.version)}</span><span>${esc(source.languages.length>1?'Multilingual':languageLabel(source.languages[0]))}</span><span class="rating">${esc(ratingLabels[source.contentRating]||source.contentRating)}</span></div><p>${esc(source.description)}</p></div><a class="install" ${["retired","serviceunavailable"].includes(source.availability.toLowerCase())?'aria-disabled="true"':`href="${esc(install)}"`} aria-label="Install ${esc(source.name)} in Manko" title="Install ${esc(source.name)} in Manko"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 3v12m-5-5 5 5 5-5M5 16v4h14v-4"/></svg></a></li>`;
+ return `<li id="source-${esc(source.id)}" class="source"><img src="./${esc(source.icon)}" width="44" height="44" alt=""><div class="info"><h2>${esc(source.name)}</h2><div class="meta"><span>v${esc(source.version)}</span><span>${esc(source.languages.length>1?'Multilingual':languageLabel(source.languages[0]))}</span><span class="rating">${esc(ratingLabels[source.contentRating]||source.contentRating)}</span></div><p>${esc(source.description)}</p></div><a class="install" ${["retired","serviceunavailable"].includes(source.availability.toLowerCase())?'aria-disabled="true"':`href="${esc(install)}"`} aria-label="Install ${esc(source.name)} in Manko" title="Install ${esc(source.name)} in Manko"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 3v12m-5-5 5 5 5-5M5 16v4h14v-4"/></svg></a></li>`;
 }).join('\n');
 await writeFile(resolve(root,'site/index.html'),`<!doctype html>
 <!-- GitHub mark from primer/octicons.\n${iconLicense} -->

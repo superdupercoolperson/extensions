@@ -2,7 +2,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {resolveAction,mount,filterSources,ratingLabels,languageLabel} from '../../../scripts/handoff-page.mjs';
-const config={expectedIDs:['One','Two'],repositoryURL:'https://superdupercoolperson.github.io/extensions/dist/community/v1/stable/',sources:[{id:'One',name:'One',languages:['multi'],contentRating:'SAFE'},{id:'Two',name:'Two',languages:['en'],contentRating:'MATURE'}]};
+const config={expectedIDs:['One','Two'],repositoryURL:'https://superdupercoolperson.github.io/extensions/',sources:[{id:'One',name:'One',languages:['multi'],contentRating:'SAFE'},{id:'Two',name:'Two',languages:['en'],contentRating:'MATURE'}]};
 test('handoff selects only known packages and fixes the repository destination',()=>{
  for(const query of ['', '?source=One','?source=Two']) {
   const action=resolveAction(query,config),url=new URL(action.href);

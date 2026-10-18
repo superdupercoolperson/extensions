@@ -7,8 +7,10 @@ Content sources for Manko, maintained by [superdupercoolperson](https://github.c
 Copy this repository URL into **Manko → Extensions → Add Repository**:
 
 ```text
-https://superdupercoolperson.github.io/extensions/dist/community/v1/stable/
+https://superdupercoolperson.github.io/extensions/
 ```
+
+The previous `/dist/community/v1/stable/` repository URL remains supported for existing installations.
 
 | Extension | Install |
 | --- | --- |
