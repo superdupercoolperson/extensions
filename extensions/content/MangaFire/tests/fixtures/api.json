@@ -1,0 +1,78 @@
+{
+  "series": {
+    "id": 101,
+    "hid": "demo1",
+    "slug": "sample-story",
+    "title": "Sample & Story",
+    "type": "manga",
+    "status": "on_hiatus",
+    "contentRating": "suggestive",
+    "poster": {
+      "medium": "https://static.mfcdn.nl/sample/cover.jpg"
+    },
+    "synopsisHtml": "<p>An original <b>sample</b> synopsis &amp; adventure.</p>",
+    "altTitles": [
+      "Sample Adventure"
+    ],
+    "authors": [
+      {
+        "title": "Sample Author"
+      }
+    ],
+    "artists": [
+      {
+        "title": "Sample Artist"
+      }
+    ]
+  },
+  "chapters": [
+    {
+      "id": 701,
+      "number": 2.5,
+      "name": "A new beginning",
+      "language": "en",
+      "type": "official",
+      "createdAt": 1791475200
+    },
+    {
+      "id": 702,
+      "number": 2.5,
+      "name": "Translated chapter",
+      "language": "fr",
+      "type": "unofficial",
+      "createdAt": 1791475200
+    },
+    {
+      "id": 703,
+      "number": 1,
+      "name": null,
+      "language": "ja",
+      "type": "official",
+      "createdAt": null
+    }
+  ],
+  "pages": {
+    "id": 701,
+    "title": {
+      "hid": "demo1"
+    },
+    "pages": [
+      {
+        "url": "https://m3z.mfcdn3.xyz/sample/1.webp?expires=1799999999"
+      },
+      {
+        "url": "https://another.mfcdn3.xyz/sample/2.webp"
+      }
+    ]
+  },
+  "genres": [
+    {
+      "id": 1,
+      "name": "Action"
+    },
+    {
+      "id": 78,
+      "name": "Adventure"
+    }
+  ]
+}

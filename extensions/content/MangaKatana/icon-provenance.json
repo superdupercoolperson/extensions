@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "asset": "icon.png",
+  "sourceURL": "https://mangakatana.com/static/img/fav.png",
+  "sha256": "de033870adaf63cf1c9d6765739396f65a44e6c51590465bcc6745acc5b6af22",
+  "attribution": "MangaKatana service logo; brand artwork is separate from the extension code license.",
+  "modifications": [],
+  "license": "Upstream brand artwork; no extension-code license asserted."
+}

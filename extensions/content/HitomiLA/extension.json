@@ -1,0 +1,79 @@
+{
+  "id": "HitomiLA",
+  "name": "Hitomi.la",
+  "description": "Anonymous multi-language discovery, search, gallery details, and AVIF/WebP page reading for hitomi.la.",
+  "kind": "content",
+  "apiVersion": "3.0",
+  "version": "3.0.2",
+  "language": "en",
+  "languages": [
+    "en",
+    "ja",
+    "zh",
+    "es",
+    "fr",
+    "de",
+    "ko",
+    "ru",
+    "it",
+    "pt",
+    "pl",
+    "nl",
+    "vi",
+    "id",
+    "th",
+    "cs",
+    "hu",
+    "ar",
+    "tr",
+    "uk"
+  ],
+  "contentRating": "ADULT",
+  "availability": "approvalRequired",
+  "capabilities": [
+    "browse",
+    "discover",
+    "search",
+    "filters",
+    "details",
+    "installments",
+    "acquisition",
+    "imageSequence"
+  ],
+  "permissions": [
+    "network",
+    "rateLimiting",
+    "redactedLogging",
+    "state"
+  ],
+  "allowedHTTPSHosts": [
+    "hitomi.la",
+    "ltn.gold-usergeneratedcontent.net",
+    "atn.gold-usergeneratedcontent.net",
+    "a1.gold-usergeneratedcontent.net",
+    "a2.gold-usergeneratedcontent.net",
+    "tagindex.hitomi.la"
+  ],
+  "authenticationModes": [
+    "none"
+  ],
+  "developers": [
+    {
+      "name": "superdupercoolperson",
+      "github": "https://github.com/superdupercoolperson"
+    }
+  ],
+  "iconFile": "icon.png",
+  "license": "Apache-2.0",
+  "compatibility": {
+    "adapter": "native-rust-wasm",
+    "status": "supported",
+    "scope": "core",
+    "note": null,
+    "limitations": [],
+    "runtime": "native-wasm",
+    "apiVersion": "3.0"
+  },
+  "runtime": "wasm",
+  "crate": "manko-hitomi"
+}

@@ -1,0 +1,22 @@
+{
+  "name": "@manko/extensions-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "packages/cli"
+  ],
+  "scripts": {
+    "compile": "node packages/cli/bin/manko-ext.mjs compile",
+    "check": "node packages/cli/bin/manko-ext.mjs check",
+    "test": "cargo test --workspace --locked && npm run bundle && node --test packages/cli/test/*.test.mjs extensions/content/*/tests/*.test.mjs",
+    "bundle": "node packages/cli/bin/manko-ext.mjs bundle && npm run site:build",
+    "publish:dry-run": "node packages/cli/bin/manko-ext.mjs publish --dry-run",
+    "site:build": "node scripts/handoff.mjs",
+    "site:check": "node --check scripts/handoff.mjs && node --check scripts/handoff-page.mjs && node --test packages/cli/test/handoff.test.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "Apache-2.0"
+}

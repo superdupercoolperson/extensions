@@ -1,0 +1,63 @@
+{
+  "id": "LNori",
+  "name": "LNORI",
+  "description": "English light-novel discovery, series details, and XHTML volume reading from lnori.com.",
+  "kind": "content",
+  "apiVersion": "3.0",
+  "runtime": "wasm",
+  "crate": "manko-lnori",
+  "version": "3.0.1",
+  "language": "en",
+  "languages": [
+    "en"
+  ],
+  "contentRating": "MATURE",
+  "availability": "approvalRequired",
+  "capabilities": [
+    "browse",
+    "discover",
+    "search",
+    "details",
+    "installments",
+    "acquisition",
+    "cookies",
+    "challengeHandoff",
+    "filters"
+  ],
+  "permissions": [
+    "network",
+    "cookies",
+    "rateLimiting",
+    "redactedLogging",
+    "challengeHandoff",
+    "state"
+  ],
+  "allowedHTTPSHosts": [
+    "lnori.com",
+    "cdn.lnori.com",
+    "img.lnori.com"
+  ],
+  "authenticationModes": [
+    "none"
+  ],
+  "developers": [
+    {
+      "name": "superdupercoolperson",
+      "github": "https://github.com/superdupercoolperson"
+    }
+  ],
+  "iconFile": "icon.svg",
+  "license": "Apache-2.0",
+  "compatibility": {
+    "adapter": "native-rust-wasm",
+    "status": "supported",
+    "scope": "core",
+    "note": null,
+    "limitations": [
+      "Volume text is supported. Manko currently removes external illustrations when generating EPUBs."
+    ],
+    "runtime": "native-wasm",
+    "apiVersion": "3.0"
+  },
+  "homepage": "https://lnori.com"
+}

@@ -1,0 +1,69 @@
+{
+  "id": "NHentai",
+  "name": "nHentai",
+  "description": "Anonymous discovery, search, gallery details, and page reading for nhentai.net.",
+  "kind": "content",
+  "apiVersion": "3.0",
+  "version": "3.0.0",
+  "language": "multi",
+  "languages": [
+    "multi",
+    "en",
+    "ja",
+    "zh",
+    "es",
+    "fr",
+    "de",
+    "ko",
+    "ru"
+  ],
+  "contentRating": "ADULT",
+  "availability": "approvalRequired",
+  "capabilities": [
+    "browse",
+    "discover",
+    "search",
+    "filters",
+    "details",
+    "installments",
+    "acquisition",
+    "imageSequence",
+    "cookies",
+    "challengeHandoff"
+  ],
+  "permissions": [
+    "network",
+    "cookies",
+    "rateLimiting",
+    "redactedLogging",
+    "challengeHandoff",
+    "state"
+  ],
+  "allowedHTTPSHosts": [
+    "nhentai.net",
+    "i.nhentai.net",
+    "t.nhentai.net"
+  ],
+  "authenticationModes": [
+    "none"
+  ],
+  "developers": [
+    {
+      "name": "superdupercoolperson",
+      "github": "https://github.com/superdupercoolperson"
+    }
+  ],
+  "iconFile": "icon.svg",
+  "license": "Apache-2.0",
+  "compatibility": {
+    "adapter": "native-rust-wasm",
+    "status": "supported",
+    "scope": "core",
+    "note": null,
+    "limitations": [],
+    "runtime": "native-wasm",
+    "apiVersion": "3.0"
+  },
+  "runtime": "wasm",
+  "crate": "manko-nhentai"
+}

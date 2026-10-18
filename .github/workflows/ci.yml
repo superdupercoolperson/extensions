@@ -1,0 +1,26 @@
+name: extension-contracts
+on:
+  pull_request:
+  schedule:
+    - cron: "17 4 * * 3"
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - uses: dtolnay/rust-toolchain@1.90.0
+        with:
+          targets: wasm32-unknown-unknown
+      - run: npm ci
+      - run: npm run check
+      - run: npm test
+      - run: npm run site:check
+      - run: npm run site:build
+      - name: Verify generated outputs are committed
+        run: node packages/cli/lib/verify-generated.mjs

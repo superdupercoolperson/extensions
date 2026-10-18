@@ -1,0 +1,11 @@
+[package]
+name = "manko-mangabox"
+version = "0.1.0"
+edition.workspace = true
+license.workspace = true
+[dependencies]
+manko-sdk.workspace = true
+manko-site-support.workspace = true
+serde_json.workspace = true
+regex.workspace = true
+url.workspace = true

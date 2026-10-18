@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "sourceOwned": true,
+  "id": "HitomiLA",
+  "releaseVersion": "3.0.2",
+  "runtime": "wasm",
+  "compiler": "Rust 1.90.0",
+  "target": "wasm32-unknown-unknown",
+  "entryPoint": "extensions/content/HitomiLA/src/lib.rs",
+  "publisher": "superdupercoolperson"
+}

@@ -1,0 +1,60 @@
+{
+  "counts": {
+    "content": 8,
+    "tracker": 0
+  },
+  "packs": {
+    "community": [
+      "HitomiLA",
+      "LNori",
+      "MangaBat",
+      "MangaFire",
+      "MangaFox",
+      "MangaKatana",
+      "NHentai",
+      "OmegaScans"
+    ]
+  },
+  "entries": [
+    {
+      "id": "HitomiLA",
+      "kind": "content",
+      "availability": "approvalRequired"
+    },
+    {
+      "id": "LNori",
+      "kind": "content",
+      "availability": "approvalRequired"
+    },
+    {
+      "id": "MangaBat",
+      "kind": "content",
+      "availability": "approvalRequired"
+    },
+    {
+      "id": "MangaFire",
+      "kind": "content",
+      "availability": "approvalRequired"
+    },
+    {
+      "id": "MangaFox",
+      "kind": "content",
+      "availability": "approvalRequired"
+    },
+    {
+      "id": "MangaKatana",
+      "kind": "content",
+      "availability": "approvalRequired"
+    },
+    {
+      "id": "NHentai",
+      "kind": "content",
+      "availability": "approvalRequired"
+    },
+    {
+      "id": "OmegaScans",
+      "kind": "content",
+      "availability": "approvalRequired"
+    }
+  ]
+}

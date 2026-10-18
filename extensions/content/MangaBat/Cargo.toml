@@ -1,0 +1,11 @@
+[package]
+name = "manko-mangabat"
+version = "0.1.2"
+edition.workspace = true
+license.workspace = true
+[lib]
+crate-type = ["cdylib", "rlib"]
+[dependencies]
+manko-sdk.workspace = true
+manko-mangabox.workspace = true
+serde_json.workspace = true

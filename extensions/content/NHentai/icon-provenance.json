@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "asset": "icon.svg",
+  "sourceURL": "https://upload.wikimedia.org/wikipedia/commons/c/ce/NHentai_logo.svg",
+  "sha256": "dfe021c2762813d4b8775febd096049e68d8a3ca13e61b11f8939b4253a65892",
+  "attribution": "NHentai service logo; brand artwork is separate from the extension code license.",
+  "modifications": [],
+  "license": "Public domain simple text logo (Commons PD-textlogo); trademark rights retained.",
+  "referenceURL": "https://commons.wikimedia.org/wiki/File:NHentai_logo.svg",
+  "note": "Official logo mirrored by Commons; upstream recolored the n black for visibility on white backgrounds. Direct site asset unavailable."
+}

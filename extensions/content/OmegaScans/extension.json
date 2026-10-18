@@ -1,0 +1,64 @@
+{
+  "id": "OmegaScans",
+  "name": "Omega Scans",
+  "description": "Comic discovery, search, and free chapter reading from omegascans.org.",
+  "kind": "content",
+  "apiVersion": "3.0",
+  "runtime": "wasm",
+  "crate": "manko-omegascans",
+  "version": "3.0.1",
+  "language": "en",
+  "languages": [
+    "en"
+  ],
+  "contentRating": "ADULT",
+  "availability": "approvalRequired",
+  "capabilities": [
+    "browse",
+    "discover",
+    "search",
+    "details",
+    "installments",
+    "acquisition",
+    "cookies",
+    "challengeHandoff",
+    "filters",
+    "imageSequence"
+  ],
+  "permissions": [
+    "network",
+    "cookies",
+    "rateLimiting",
+    "redactedLogging",
+    "challengeHandoff",
+    "state"
+  ],
+  "allowedHTTPSHosts": [
+    "omegascans.org",
+    "api.omegascans.org",
+    "media.omegascans.org"
+  ],
+  "authenticationModes": [
+    "none"
+  ],
+  "developers": [
+    {
+      "name": "superdupercoolperson",
+      "github": "https://github.com/superdupercoolperson"
+    }
+  ],
+  "iconFile": "icon.png",
+  "license": "Apache-2.0",
+  "compatibility": {
+    "adapter": "native-rust-wasm",
+    "status": "supported",
+    "scope": "core",
+    "note": null,
+    "limitations": [
+      "Anonymous free comic chapters only. Account login, coin purchases, and text novels are not supported."
+    ],
+    "runtime": "native-wasm",
+    "apiVersion": "3.0"
+  },
+  "homepage": "https://omegascans.org"
+}

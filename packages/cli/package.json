@@ -1,0 +1,7 @@
+{
+  "name": "@manko/extension-cli",
+  "version": "1.0.0",
+  "type": "module",
+  "bin": { "manko-ext": "./bin/manko-ext.mjs" },
+  "license": "Apache-2.0"
+}

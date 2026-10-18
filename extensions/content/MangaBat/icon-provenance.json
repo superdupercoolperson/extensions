@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "asset": "icon.webp",
+  "sourceURL": "https://www.mangabats.com/images/favicon-bat.webp",
+  "sha256": "7f41037a2ce54c538704a223e40b2b8ae222607b0ec8ccfeca700a72cb15383f",
+  "attribution": "MangaBat service logo; brand artwork is separate from the extension code license.",
+  "modifications": [],
+  "license": "Upstream brand artwork; no extension-code license asserted."
+}

@@ -1,0 +1,71 @@
+{
+  "id": "MangaBat",
+  "name": "MangaBat",
+  "description": "English manga discovery, search, and chapter reading from www.mangabats.com.",
+  "kind": "content",
+  "apiVersion": "3.0",
+  "runtime": "wasm",
+  "crate": "manko-mangabat",
+  "version": "3.0.1",
+  "language": "en",
+  "languages": [
+    "en"
+  ],
+  "contentRating": "ADULT",
+  "availability": "approvalRequired",
+  "capabilities": [
+    "browse",
+    "discover",
+    "search",
+    "filters",
+    "details",
+    "installments",
+    "acquisition",
+    "cookies",
+    "challengeHandoff",
+    "imageSequence"
+  ],
+  "permissions": [
+    "network",
+    "cookies",
+    "rateLimiting",
+    "redactedLogging",
+    "challengeHandoff",
+    "state"
+  ],
+  "allowedHTTPSHosts": [
+    "www.mangabats.com",
+    "*.mkklcdnv6temp.com",
+    "*.mkklcdnv5temp.com",
+    "*.mkklcdnv4temp.com",
+    "*.mkklcdnv3temp.com",
+    "img-r2.2xstorage.com",
+    "img-r1.2xstorage.com",
+    "imgs-2.2xstorage.com",
+    "storage.waitst.com",
+    "storage4.waitst.com"
+  ],
+  "authenticationModes": [
+    "none"
+  ],
+  "developers": [
+    {
+      "name": "superdupercoolperson",
+      "github": "https://github.com/superdupercoolperson"
+    }
+  ],
+  "iconFile": "icon.webp",
+  "license": "Apache-2.0",
+  "homepage": "https://www.mangabats.com",
+  "compatibility": {
+    "adapter": "native-rust-wasm",
+    "status": "supported",
+    "scope": "core",
+    "note": null,
+    "limitations": [
+      "Anonymous reading only. Search terms cannot be combined with site filters. Cloudflare verification may be required separately for an image host."
+    ],
+    "runtime": "native-wasm",
+    "apiVersion": "3.0"
+  }
+}

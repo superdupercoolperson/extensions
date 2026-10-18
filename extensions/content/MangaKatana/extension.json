@@ -1,0 +1,63 @@
+{
+  "id": "MangaKatana",
+  "name": "MangaKatana",
+  "description": "English manga discovery, title and author search, directory filters, and chapter reading from MangaKatana.",
+  "kind": "content",
+  "apiVersion": "3.0",
+  "runtime": "wasm",
+  "crate": "manko-mangakatana",
+  "version": "3.0.1",
+  "language": "en",
+  "languages": [
+    "en"
+  ],
+  "contentRating": "ADULT",
+  "availability": "approvalRequired",
+  "capabilities": [
+    "browse",
+    "discover",
+    "search",
+    "filters",
+    "details",
+    "installments",
+    "acquisition",
+    "cookies",
+    "challengeHandoff",
+    "imageSequence"
+  ],
+  "permissions": [
+    "network",
+    "cookies",
+    "rateLimiting",
+    "redactedLogging",
+    "challengeHandoff",
+    "state"
+  ],
+  "allowedHTTPSHosts": [
+    "mangakatana.com",
+    "i1.mangakatana.com"
+  ],
+  "authenticationModes": [
+    "none"
+  ],
+  "developers": [
+    {
+      "name": "superdupercoolperson",
+      "github": "https://github.com/superdupercoolperson"
+    }
+  ],
+  "iconFile": "icon.png",
+  "license": "Apache-2.0",
+  "compatibility": {
+    "adapter": "native-rust-wasm",
+    "status": "supported",
+    "scope": "core",
+    "note": null,
+    "limitations": [
+      "Anonymous reading only. Text search cannot be combined with directory filters. Uses the default reader server; new image hosts require an extension update."
+    ],
+    "runtime": "native-wasm",
+    "apiVersion": "3.0"
+  },
+  "homepage": "https://mangakatana.com"
+}

@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "asset": "icon.png",
+  "sourceURL": "https://omegascans.org/icon.png",
+  "sha256": "3cab7de02ca5ec7467d44d7bb0cb472b88e203176ce33d6c963747e56bed4873",
+  "attribution": "OmegaScans service logo; brand artwork is separate from the extension code license.",
+  "modifications": [],
+  "license": "Upstream brand artwork; no extension-code license asserted."
+}

@@ -1,0 +1,65 @@
+{
+  "id": "MangaFox",
+  "name": "MangaFox",
+  "description": "Manga discovery, title search, and lazy image-page reading from fanfox.net.",
+  "kind": "content",
+  "apiVersion": "3.0",
+  "runtime": "wasm",
+  "crate": "manko-mangafox",
+  "version": "3.0.0",
+  "language": "en",
+  "languages": [
+    "en"
+  ],
+  "contentRating": "MATURE",
+  "availability": "approvalRequired",
+  "capabilities": [
+    "browse",
+    "discover",
+    "search",
+    "details",
+    "installments",
+    "acquisition",
+    "cookies",
+    "challengeHandoff",
+    "imageSequence"
+  ],
+  "permissions": [
+    "network",
+    "cookies",
+    "rateLimiting",
+    "redactedLogging",
+    "challengeHandoff",
+    "state"
+  ],
+  "allowedHTTPSHosts": [
+    "fanfox.net",
+    "m.fanfox.net",
+    "fmcdn.mfcdn.net",
+    "zjcdn.mangafox.me",
+    "c.mfcdn.net"
+  ],
+  "authenticationModes": [
+    "none"
+  ],
+  "developers": [
+    {
+      "name": "superdupercoolperson",
+      "github": "https://github.com/superdupercoolperson"
+    }
+  ],
+  "iconFile": "icon.ico",
+  "license": "Apache-2.0",
+  "compatibility": {
+    "adapter": "native-rust-wasm",
+    "status": "supported",
+    "scope": "core",
+    "note": null,
+    "limitations": [
+      "Uses the public mobile reader. Unexpected image CDN domains require an extension update."
+    ],
+    "runtime": "native-wasm",
+    "apiVersion": "3.0"
+  },
+  "homepage": "https://fanfox.net"
+}

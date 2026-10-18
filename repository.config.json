@@ -1,0 +1,13 @@
+{
+  "packs": {
+    "community": {
+      "id": "manko.community",
+      "name": "Source Extensions",
+      "description": "Content sources for Manko.",
+      "homepage": "https://superdupercoolperson.github.io/extensions/",
+      "privacyURL": "https://github.com/superdupercoolperson/extensions/blob/main/PRIVACY.md",
+      "publisherName": "superdupercoolperson",
+      "repositoryURL": "https://superdupercoolperson.github.io/extensions/dist/community/v1/stable/"
+    }
+  }
+}

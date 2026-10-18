@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "asset": "icon.svg",
+  "sourceURL": "https://mangafire.to/assets/mangafire/favicon.svg",
+  "sha256": "2dab45396e6374ed7dc933df453d1759fc4870cdec7627c7a25b677af2834fec",
+  "attribution": "MangaFire service logo; brand artwork is separate from the extension code license.",
+  "modifications": [],
+  "license": "Upstream brand artwork; no extension-code license asserted."
+}

@@ -1,0 +1,652 @@
+{
+  "repositoryURL": "https://superdupercoolperson.github.io/extensions/dist/community/v1/stable/",
+  "repository": {
+    "name": "Source Extensions"
+  },
+  "sources": [
+    {
+      "id": "HitomiLA",
+      "name": "Hitomi.la",
+      "description": "Anonymous multi-language discovery, search, gallery details, and AVIF/WebP page reading for hitomi.la.",
+      "version": "3.0.2",
+      "icon": "icons/HitomiLA.png",
+      "languages": [
+        "en",
+        "ja",
+        "zh",
+        "es",
+        "fr",
+        "de",
+        "ko",
+        "ru",
+        "it",
+        "pt",
+        "pl",
+        "nl",
+        "vi",
+        "id",
+        "th",
+        "cs",
+        "hu",
+        "ar",
+        "tr",
+        "uk"
+      ],
+      "contentRating": "ADULT",
+      "capabilities": [
+        "browse",
+        "discover",
+        "search",
+        "filters",
+        "details",
+        "installments",
+        "acquisition",
+        "imageSequence"
+      ],
+      "developers": [
+        {
+          "name": "superdupercoolperson",
+          "github": "https://github.com/superdupercoolperson"
+        }
+      ],
+      "rightsDeclaration": "Licensed under Apache-2.0.",
+      "rightsURL": "https://github.com/superdupercoolperson/extensions/blob/main/extensions/content/HitomiLA/LICENSE",
+      "reportURL": "https://github.com/superdupercoolperson/extensions/issues/new/choose",
+      "sourceURL": "https://github.com/superdupercoolperson/extensions/tree/main/extensions/content/HitomiLA",
+      "sourceRevision": "main",
+      "entryType": "extension",
+      "kind": "content",
+      "availability": "approvalRequired",
+      "permissions": {
+        "values": [
+          "network",
+          "rateLimiting",
+          "redactedLogging",
+          "state"
+        ]
+      },
+      "extension": {
+        "apiVersion": "3.0",
+        "runtime": "wasm",
+        "moduleURL": "sources/HitomiLA/3.0.2/main.wasm",
+        "sha256": "a77d3784306c721f4f0d086655dbf26a15ae39b6b4382223f3dcca5fb72c0c33",
+        "size": 1787796,
+        "allowedHTTPSHosts": [
+          "hitomi.la",
+          "ltn.gold-usergeneratedcontent.net",
+          "atn.gold-usergeneratedcontent.net",
+          "a1.gold-usergeneratedcontent.net",
+          "a2.gold-usergeneratedcontent.net",
+          "tagindex.hitomi.la"
+        ],
+        "authenticationModes": [
+          "none"
+        ]
+      },
+      "moduleSHA256": "a77d3784306c721f4f0d086655dbf26a15ae39b6b4382223f3dcca5fb72c0c33",
+      "license": "Apache-2.0",
+      "compatibility": {
+        "adapter": "native-rust-wasm",
+        "status": "supported",
+        "scope": "core",
+        "note": null,
+        "limitations": [],
+        "runtime": "native-wasm",
+        "apiVersion": "3.0"
+      },
+      "upstream": null
+    },
+    {
+      "id": "LNori",
+      "name": "LNORI",
+      "description": "English light-novel discovery, series details, and XHTML volume reading from lnori.com.",
+      "version": "3.0.1",
+      "icon": "icons/LNori.svg",
+      "languages": [
+        "en"
+      ],
+      "contentRating": "MATURE",
+      "capabilities": [
+        "browse",
+        "discover",
+        "search",
+        "details",
+        "installments",
+        "acquisition",
+        "cookies",
+        "challengeHandoff",
+        "filters"
+      ],
+      "developers": [
+        {
+          "name": "superdupercoolperson",
+          "github": "https://github.com/superdupercoolperson"
+        }
+      ],
+      "rightsDeclaration": "Licensed under Apache-2.0.",
+      "rightsURL": "https://github.com/superdupercoolperson/extensions/blob/main/extensions/content/LNori/LICENSE",
+      "reportURL": "https://github.com/superdupercoolperson/extensions/issues/new/choose",
+      "sourceURL": "https://github.com/superdupercoolperson/extensions/tree/main/extensions/content/LNori",
+      "sourceRevision": "main",
+      "entryType": "extension",
+      "kind": "content",
+      "availability": "approvalRequired",
+      "permissions": {
+        "values": [
+          "network",
+          "cookies",
+          "rateLimiting",
+          "redactedLogging",
+          "challengeHandoff",
+          "state"
+        ]
+      },
+      "extension": {
+        "apiVersion": "3.0",
+        "runtime": "wasm",
+        "moduleURL": "sources/LNori/3.0.1/main.wasm",
+        "sha256": "ba03d01d20473dae797c3bc0baebf00a2dd80dfc8b1ebbf17f7b10a4b4c35eea",
+        "size": 1276990,
+        "allowedHTTPSHosts": [
+          "lnori.com",
+          "cdn.lnori.com",
+          "img.lnori.com"
+        ],
+        "authenticationModes": [
+          "none"
+        ]
+      },
+      "moduleSHA256": "ba03d01d20473dae797c3bc0baebf00a2dd80dfc8b1ebbf17f7b10a4b4c35eea",
+      "license": "Apache-2.0",
+      "compatibility": {
+        "adapter": "native-rust-wasm",
+        "status": "supported",
+        "scope": "core",
+        "note": null,
+        "limitations": [
+          "Volume text is supported. Manko currently removes external illustrations when generating EPUBs."
+        ],
+        "runtime": "native-wasm",
+        "apiVersion": "3.0"
+      },
+      "upstream": null
+    },
+    {
+      "id": "MangaBat",
+      "name": "MangaBat",
+      "description": "English manga discovery, search, and chapter reading from www.mangabats.com.",
+      "version": "3.0.1",
+      "icon": "icons/MangaBat.webp",
+      "languages": [
+        "en"
+      ],
+      "contentRating": "ADULT",
+      "capabilities": [
+        "browse",
+        "discover",
+        "search",
+        "filters",
+        "details",
+        "installments",
+        "acquisition",
+        "cookies",
+        "challengeHandoff",
+        "imageSequence"
+      ],
+      "developers": [
+        {
+          "name": "superdupercoolperson",
+          "github": "https://github.com/superdupercoolperson"
+        }
+      ],
+      "rightsDeclaration": "Licensed under Apache-2.0.",
+      "rightsURL": "https://github.com/superdupercoolperson/extensions/blob/main/extensions/content/MangaBat/LICENSE",
+      "reportURL": "https://github.com/superdupercoolperson/extensions/issues/new/choose",
+      "sourceURL": "https://github.com/superdupercoolperson/extensions/tree/main/extensions/content/MangaBat",
+      "sourceRevision": "main",
+      "entryType": "extension",
+      "kind": "content",
+      "availability": "approvalRequired",
+      "permissions": {
+        "values": [
+          "network",
+          "cookies",
+          "rateLimiting",
+          "redactedLogging",
+          "challengeHandoff",
+          "state"
+        ]
+      },
+      "extension": {
+        "apiVersion": "3.0",
+        "runtime": "wasm",
+        "moduleURL": "sources/MangaBat/3.0.1/main.wasm",
+        "sha256": "587917d10f6c47b42bed876a151e14edd72bbc8ca29f013a27cd42fbfbb4f397",
+        "size": 2262315,
+        "allowedHTTPSHosts": [
+          "www.mangabats.com",
+          "*.mkklcdnv6temp.com",
+          "*.mkklcdnv5temp.com",
+          "*.mkklcdnv4temp.com",
+          "*.mkklcdnv3temp.com",
+          "img-r2.2xstorage.com",
+          "img-r1.2xstorage.com",
+          "imgs-2.2xstorage.com",
+          "storage.waitst.com",
+          "storage4.waitst.com"
+        ],
+        "authenticationModes": [
+          "none"
+        ]
+      },
+      "moduleSHA256": "587917d10f6c47b42bed876a151e14edd72bbc8ca29f013a27cd42fbfbb4f397",
+      "license": "Apache-2.0",
+      "compatibility": {
+        "adapter": "native-rust-wasm",
+        "status": "supported",
+        "scope": "core",
+        "note": null,
+        "limitations": [
+          "Anonymous reading only. Search terms cannot be combined with site filters. Cloudflare verification may be required separately for an image host."
+        ],
+        "runtime": "native-wasm",
+        "apiVersion": "3.0"
+      },
+      "upstream": null
+    },
+    {
+      "id": "MangaFire",
+      "name": "MangaFire",
+      "description": "Manga discovery, multilingual search, and image chapter reading from mangafire.to.",
+      "version": "3.0.0",
+      "icon": "icons/MangaFire.svg",
+      "languages": [
+        "en",
+        "ja",
+        "fr",
+        "es",
+        "es-la",
+        "pt",
+        "pt-br"
+      ],
+      "contentRating": "ADULT",
+      "capabilities": [
+        "browse",
+        "discover",
+        "search",
+        "filters",
+        "details",
+        "installments",
+        "acquisition",
+        "cookies",
+        "challengeHandoff",
+        "imageSequence"
+      ],
+      "developers": [
+        {
+          "name": "superdupercoolperson",
+          "github": "https://github.com/superdupercoolperson"
+        }
+      ],
+      "rightsDeclaration": "Licensed under Apache-2.0.",
+      "rightsURL": "https://github.com/superdupercoolperson/extensions/blob/main/extensions/content/MangaFire/LICENSE",
+      "reportURL": "https://github.com/superdupercoolperson/extensions/issues/new/choose",
+      "sourceURL": "https://github.com/superdupercoolperson/extensions/tree/main/extensions/content/MangaFire",
+      "sourceRevision": "main",
+      "entryType": "extension",
+      "kind": "content",
+      "availability": "approvalRequired",
+      "permissions": {
+        "values": [
+          "network",
+          "cookies",
+          "rateLimiting",
+          "redactedLogging",
+          "challengeHandoff",
+          "state"
+        ]
+      },
+      "extension": {
+        "apiVersion": "3.0",
+        "runtime": "wasm",
+        "moduleURL": "sources/MangaFire/3.0.0/main.wasm",
+        "sha256": "f22a03014657c4299bbd4474e713fa6bee0c6d6bb02231ada4ba941f98a64f02",
+        "size": 1046995,
+        "allowedHTTPSHosts": [
+          "mangafire.to",
+          "*.mfcdn.nl",
+          "*.mfcdn1.xyz",
+          "*.mfcdn3.xyz",
+          "*.mfcdn2.xyz"
+        ],
+        "authenticationModes": [
+          "none"
+        ]
+      },
+      "moduleSHA256": "f22a03014657c4299bbd4474e713fa6bee0c6d6bb02231ada4ba941f98a64f02",
+      "license": "Apache-2.0",
+      "compatibility": {
+        "adapter": "native-rust-wasm",
+        "status": "supported",
+        "scope": "core",
+        "note": null,
+        "limitations": [
+          "Anonymous chapters only; account features and volume releases are not supported. MangaFire request signing and CDN changes may require an extension update."
+        ],
+        "runtime": "native-wasm",
+        "apiVersion": "3.0"
+      },
+      "upstream": null
+    },
+    {
+      "id": "MangaFox",
+      "name": "MangaFox",
+      "description": "Manga discovery, title search, and lazy image-page reading from fanfox.net.",
+      "version": "3.0.0",
+      "icon": "icons/MangaFox.ico",
+      "languages": [
+        "en"
+      ],
+      "contentRating": "MATURE",
+      "capabilities": [
+        "browse",
+        "discover",
+        "search",
+        "details",
+        "installments",
+        "acquisition",
+        "cookies",
+        "challengeHandoff",
+        "imageSequence"
+      ],
+      "developers": [
+        {
+          "name": "superdupercoolperson",
+          "github": "https://github.com/superdupercoolperson"
+        }
+      ],
+      "rightsDeclaration": "Licensed under Apache-2.0.",
+      "rightsURL": "https://github.com/superdupercoolperson/extensions/blob/main/extensions/content/MangaFox/LICENSE",
+      "reportURL": "https://github.com/superdupercoolperson/extensions/issues/new/choose",
+      "sourceURL": "https://github.com/superdupercoolperson/extensions/tree/main/extensions/content/MangaFox",
+      "sourceRevision": "main",
+      "entryType": "extension",
+      "kind": "content",
+      "availability": "approvalRequired",
+      "permissions": {
+        "values": [
+          "network",
+          "cookies",
+          "rateLimiting",
+          "redactedLogging",
+          "challengeHandoff",
+          "state"
+        ]
+      },
+      "extension": {
+        "apiVersion": "3.0",
+        "runtime": "wasm",
+        "moduleURL": "sources/MangaFox/3.0.0/main.wasm",
+        "sha256": "b6679f22a9949f3ba6154c38e67eca814561b29a1f088788b51f210baa077e9f",
+        "size": 2269057,
+        "allowedHTTPSHosts": [
+          "fanfox.net",
+          "m.fanfox.net",
+          "fmcdn.mfcdn.net",
+          "zjcdn.mangafox.me",
+          "c.mfcdn.net"
+        ],
+        "authenticationModes": [
+          "none"
+        ]
+      },
+      "moduleSHA256": "b6679f22a9949f3ba6154c38e67eca814561b29a1f088788b51f210baa077e9f",
+      "license": "Apache-2.0",
+      "compatibility": {
+        "adapter": "native-rust-wasm",
+        "status": "supported",
+        "scope": "core",
+        "note": null,
+        "limitations": [
+          "Uses the public mobile reader. Unexpected image CDN domains require an extension update."
+        ],
+        "runtime": "native-wasm",
+        "apiVersion": "3.0"
+      },
+      "upstream": null
+    },
+    {
+      "id": "MangaKatana",
+      "name": "MangaKatana",
+      "description": "English manga discovery, title and author search, directory filters, and chapter reading from MangaKatana.",
+      "version": "3.0.1",
+      "icon": "icons/MangaKatana.png",
+      "languages": [
+        "en"
+      ],
+      "contentRating": "ADULT",
+      "capabilities": [
+        "browse",
+        "discover",
+        "search",
+        "filters",
+        "details",
+        "installments",
+        "acquisition",
+        "cookies",
+        "challengeHandoff",
+        "imageSequence"
+      ],
+      "developers": [
+        {
+          "name": "superdupercoolperson",
+          "github": "https://github.com/superdupercoolperson"
+        }
+      ],
+      "rightsDeclaration": "Licensed under Apache-2.0.",
+      "rightsURL": "https://github.com/superdupercoolperson/extensions/blob/main/extensions/content/MangaKatana/LICENSE",
+      "reportURL": "https://github.com/superdupercoolperson/extensions/issues/new/choose",
+      "sourceURL": "https://github.com/superdupercoolperson/extensions/tree/main/extensions/content/MangaKatana",
+      "sourceRevision": "main",
+      "entryType": "extension",
+      "kind": "content",
+      "availability": "approvalRequired",
+      "permissions": {
+        "values": [
+          "network",
+          "cookies",
+          "rateLimiting",
+          "redactedLogging",
+          "challengeHandoff",
+          "state"
+        ]
+      },
+      "extension": {
+        "apiVersion": "3.0",
+        "runtime": "wasm",
+        "moduleURL": "sources/MangaKatana/3.0.1/main.wasm",
+        "sha256": "6e6eddff4ab61b1ac21393aefefb61a5efbdea44dd230927dc50918f7a6c5f55",
+        "size": 2321040,
+        "allowedHTTPSHosts": [
+          "mangakatana.com",
+          "i1.mangakatana.com"
+        ],
+        "authenticationModes": [
+          "none"
+        ]
+      },
+      "moduleSHA256": "6e6eddff4ab61b1ac21393aefefb61a5efbdea44dd230927dc50918f7a6c5f55",
+      "license": "Apache-2.0",
+      "compatibility": {
+        "adapter": "native-rust-wasm",
+        "status": "supported",
+        "scope": "core",
+        "note": null,
+        "limitations": [
+          "Anonymous reading only. Text search cannot be combined with directory filters. Uses the default reader server; new image hosts require an extension update."
+        ],
+        "runtime": "native-wasm",
+        "apiVersion": "3.0"
+      },
+      "upstream": null
+    },
+    {
+      "id": "NHentai",
+      "name": "nHentai",
+      "description": "Anonymous discovery, search, gallery details, and page reading for nhentai.net.",
+      "version": "3.0.0",
+      "icon": "icons/NHentai.svg",
+      "languages": [
+        "multi",
+        "en",
+        "ja",
+        "zh",
+        "es",
+        "fr",
+        "de",
+        "ko",
+        "ru"
+      ],
+      "contentRating": "ADULT",
+      "capabilities": [
+        "browse",
+        "discover",
+        "search",
+        "filters",
+        "details",
+        "installments",
+        "acquisition",
+        "imageSequence",
+        "cookies",
+        "challengeHandoff"
+      ],
+      "developers": [
+        {
+          "name": "superdupercoolperson",
+          "github": "https://github.com/superdupercoolperson"
+        }
+      ],
+      "rightsDeclaration": "Licensed under Apache-2.0.",
+      "rightsURL": "https://github.com/superdupercoolperson/extensions/blob/main/extensions/content/NHentai/LICENSE",
+      "reportURL": "https://github.com/superdupercoolperson/extensions/issues/new/choose",
+      "sourceURL": "https://github.com/superdupercoolperson/extensions/tree/main/extensions/content/NHentai",
+      "sourceRevision": "main",
+      "entryType": "extension",
+      "kind": "content",
+      "availability": "approvalRequired",
+      "permissions": {
+        "values": [
+          "network",
+          "cookies",
+          "rateLimiting",
+          "redactedLogging",
+          "challengeHandoff",
+          "state"
+        ]
+      },
+      "extension": {
+        "apiVersion": "3.0",
+        "runtime": "wasm",
+        "moduleURL": "sources/NHentai/3.0.0/main.wasm",
+        "sha256": "0a2380a862f5e59dbd16f2ef39f142259a81f9c9064ed1d1fbfdf16a8686fa86",
+        "size": 517939,
+        "allowedHTTPSHosts": [
+          "nhentai.net",
+          "i.nhentai.net",
+          "t.nhentai.net"
+        ],
+        "authenticationModes": [
+          "none"
+        ]
+      },
+      "moduleSHA256": "0a2380a862f5e59dbd16f2ef39f142259a81f9c9064ed1d1fbfdf16a8686fa86",
+      "license": "Apache-2.0",
+      "compatibility": {
+        "adapter": "native-rust-wasm",
+        "status": "supported",
+        "scope": "core",
+        "note": null,
+        "limitations": [],
+        "runtime": "native-wasm",
+        "apiVersion": "3.0"
+      },
+      "upstream": null
+    },
+    {
+      "id": "OmegaScans",
+      "name": "Omega Scans",
+      "description": "Comic discovery, search, and free chapter reading from omegascans.org.",
+      "version": "3.0.1",
+      "icon": "icons/OmegaScans.png",
+      "languages": [
+        "en"
+      ],
+      "contentRating": "ADULT",
+      "capabilities": [
+        "browse",
+        "discover",
+        "search",
+        "details",
+        "installments",
+        "acquisition",
+        "cookies",
+        "challengeHandoff",
+        "filters",
+        "imageSequence"
+      ],
+      "developers": [
+        {
+          "name": "superdupercoolperson",
+          "github": "https://github.com/superdupercoolperson"
+        }
+      ],
+      "rightsDeclaration": "Licensed under Apache-2.0.",
+      "rightsURL": "https://github.com/superdupercoolperson/extensions/blob/main/extensions/content/OmegaScans/LICENSE",
+      "reportURL": "https://github.com/superdupercoolperson/extensions/issues/new/choose",
+      "sourceURL": "https://github.com/superdupercoolperson/extensions/tree/main/extensions/content/OmegaScans",
+      "sourceRevision": "main",
+      "entryType": "extension",
+      "kind": "content",
+      "availability": "approvalRequired",
+      "permissions": {
+        "values": [
+          "network",
+          "cookies",
+          "rateLimiting",
+          "redactedLogging",
+          "challengeHandoff",
+          "state"
+        ]
+      },
+      "extension": {
+        "apiVersion": "3.0",
+        "runtime": "wasm",
+        "moduleURL": "sources/OmegaScans/3.0.1/main.wasm",
+        "sha256": "f3c1a13a0fa987172b54ec2a67b8393ef4bf9f452c04cf4ec5c17b26716617ca",
+        "size": 2087342,
+        "allowedHTTPSHosts": [
+          "omegascans.org",
+          "api.omegascans.org",
+          "media.omegascans.org"
+        ],
+        "authenticationModes": [
+          "none"
+        ]
+      },
+      "moduleSHA256": "f3c1a13a0fa987172b54ec2a67b8393ef4bf9f452c04cf4ec5c17b26716617ca",
+      "license": "Apache-2.0",
+      "compatibility": {
+        "adapter": "native-rust-wasm",
+        "status": "supported",
+        "scope": "core",
+        "note": null,
+        "limitations": [
+          "Anonymous free comic chapters only. Account login, coin purchases, and text novels are not supported."
+        ],
+        "runtime": "native-wasm",
+        "apiVersion": "3.0"
+      },
+      "upstream": null
+    }
+  ]
+}

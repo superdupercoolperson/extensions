@@ -1,0 +1,22 @@
+[package]
+name = "manko-hitomi"
+version = "3.0.2"
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+futures.workspace = true
+manko-sdk.workspace = true
+serde_json.workspace = true
+serde.workspace = true
+url.workspace = true
+regex.workspace = true
+sha2.workspace = true
+base64.workspace = true
+manko-site-support.workspace = true
+percent-encoding = "2"
+html-escape = "0.2"

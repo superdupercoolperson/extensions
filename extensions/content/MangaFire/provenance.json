@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "sourceOwned": true,
+  "id": "MangaFire",
+  "releaseVersion": "0.1.0",
+  "runtime": "wasm",
+  "compiler": "Rust 1.90.0",
+  "target": "wasm32-unknown-unknown",
+  "entryPoint": "extensions/content/MangaFire/src/lib.rs",
+  "upstream": {
+    "repository": "https://github.com/keiyoushi/extensions-source",
+    "commit": "eafc5c6733fc93b95786af74e572d67124111766",
+    "paths": [
+      "src/all/mangafire/src/eu/kanade/tachiyomi/extension/all/mangafire/VrfSigner.kt"
+    ],
+    "licenseChoice": "Apache-2.0"
+  }
+}

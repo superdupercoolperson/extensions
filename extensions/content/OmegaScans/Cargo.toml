@@ -1,0 +1,14 @@
+[package]
+name = "manko-omegascans"
+version = "0.1.3"
+edition.workspace = true
+license.workspace = true
+[lib]
+crate-type = ["cdylib", "rlib"]
+[dependencies]
+manko-sdk.workspace = true
+serde_json.workspace = true
+
+manko-site-support.workspace = true
+regex.workspace = true
+url.workspace = true

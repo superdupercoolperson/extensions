@@ -1,0 +1,15 @@
+[package]
+name = "manko-mangakatana"
+version = "3.0.1"
+edition.workspace = true
+license.workspace = true
+[lib]
+crate-type = ["cdylib", "rlib"]
+[dependencies]
+manko-sdk.workspace = true
+manko-site-support.workspace = true
+serde_json.workspace = true
+url.workspace = true
+regex.workspace = true
+chrono.workspace = true
+html-escape = "0.2"

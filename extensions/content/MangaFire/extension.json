@@ -1,0 +1,72 @@
+{
+  "id": "MangaFire",
+  "name": "MangaFire",
+  "description": "Manga discovery, multilingual search, and image chapter reading from mangafire.to.",
+  "kind": "content",
+  "apiVersion": "3.0",
+  "runtime": "wasm",
+  "crate": "manko-mangafire",
+  "version": "3.0.0",
+  "language": "en",
+  "languages": [
+    "en",
+    "ja",
+    "fr",
+    "es",
+    "es-la",
+    "pt",
+    "pt-br"
+  ],
+  "contentRating": "ADULT",
+  "availability": "approvalRequired",
+  "capabilities": [
+    "browse",
+    "discover",
+    "search",
+    "filters",
+    "details",
+    "installments",
+    "acquisition",
+    "cookies",
+    "challengeHandoff",
+    "imageSequence"
+  ],
+  "permissions": [
+    "network",
+    "cookies",
+    "rateLimiting",
+    "redactedLogging",
+    "challengeHandoff",
+    "state"
+  ],
+  "allowedHTTPSHosts": [
+    "mangafire.to",
+    "*.mfcdn.nl",
+    "*.mfcdn1.xyz",
+    "*.mfcdn3.xyz",
+    "*.mfcdn2.xyz"
+  ],
+  "authenticationModes": [
+    "none"
+  ],
+  "developers": [
+    {
+      "name": "superdupercoolperson",
+      "github": "https://github.com/superdupercoolperson"
+    }
+  ],
+  "iconFile": "icon.svg",
+  "license": "Apache-2.0",
+  "homepage": "https://mangafire.to",
+  "compatibility": {
+    "adapter": "native-rust-wasm",
+    "status": "supported",
+    "scope": "core",
+    "note": null,
+    "limitations": [
+      "Anonymous chapters only; account features and volume releases are not supported. MangaFire request signing and CDN changes may require an extension update."
+    ],
+    "runtime": "native-wasm",
+    "apiVersion": "3.0"
+  }
+}
